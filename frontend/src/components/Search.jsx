@@ -25,7 +25,7 @@ const Search = ({ setWorkers, setHasSearched }) => {
   };
 
   const searchBoxRef = useRef(null);
-  const [, setAddress] = useState("");
+  
 
   const onPlacesChanged = () => {
     console.log("Place Changed Fired");
