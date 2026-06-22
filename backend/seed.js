@@ -143,7 +143,7 @@ async function seedData() {
 
     await Worker.insertMany(workers);
 
-    console.log(`✅ ${workers.length} Workers Inserted Successfully`);
+    console.log(` ${workers.length} Workers Inserted Successfully`);
     process.exit();
   } catch (err) {
     console.error(err);
