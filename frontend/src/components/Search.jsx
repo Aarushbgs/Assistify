@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useLoadScript, Autocomplete } from "@react-google-maps/api";
-import WorkerList from "./WorkerList";
-import ServiceUnavailable from "./ServiceUnavailable";
+
 
 import "../App.css";
 
@@ -26,7 +25,7 @@ const Search = ({ setWorkers, setHasSearched }) => {
   };
 
   const searchBoxRef = useRef(null);
-  const [address, setAddress] = useState("");
+  const [, setAddress] = useState("");
 
   const onPlacesChanged = () => {
     console.log("Place Changed Fired");
