@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f7f7f7;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+   overflow: visible; 
+}
+
+.search-item {
+  flex: 1;
+  padding: 15px 25px;
+  border-right: 1px solid #e5e5e5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.search-item label {
+  display: block;
+  margin-bottom: 1px;
+  
+}
+
+.search-item input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #555;
+}
+
+
+.search-item:hover {
+  background-color: #f2f2f2;
+  border-radius: 50px;
+  
+}
+
+.search-item:nth-last-child(2) {
+  border-right: none;
+}
+
+
+.search-btn {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 50%;
+  /* background: #ff385c; */
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  transform: scale(1.05);
+}
+
+.search-item select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .search-wrapper {
+    padding: 20px 16px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: visible; 
+    align-items: stretch;
+  }
+
+  .search-item {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .search-item:nth-last-child(2) {
+    border-bottom: none;
+  }
+
+  .search-btn {
+    width: calc(100% - 20px); 
+    height: 48px;
+    border-radius: 12px;      
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.search-item {
+  position: relative;
+}
+
+.service-display {
+  width: 100%;
+  font-size: 15px;
+  color: #555;
+ }
+
+.service-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  margin-top: 8px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.service-dropdown div {
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+}
+
+.service-dropdown div:hover {
+  background: #f5f5f5;
+}
+
+
+
+
+.service-unavailable {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+  padding: 20px;
+}
+
+.unavailable-card {
+  background: white;
+  width: 100%;
+  max-width: 650px;
+  padding: 50px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.icon {
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.unavailable-card h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.unavailable-card p {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.location-box {
+  background: #f3f4f6;
+  padding: 14px;
+  border-radius: 12px;
+  margin: 25px 0;
+}
+
+.location-box span {
+  color: #6b7280;
+}
+
+.location-box strong {
+  margin-left: 8px;
+  color: #111827;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.notify-btn {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.change-btn {
+  background: white;
+  border: 1px solid #d1d5db;
+  padding: 14px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.features {
+  margin-top: 30px;
+  text-align: left;
+  display: inline-block;
+}
+
+.features p {
+  margin-bottom: 8px;
+}
+
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 100;
+  color: #514d4e;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
