@@ -77,7 +77,7 @@ const Search = ({ setWorkers, setHasSearched }) => {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/workers/nearby?lat=${coords.lat}&lng=${coords.lng}&service=${service}`,
+        `https://assistify-7zve.onrender.com/api/workers/nearby?lat=${coords.lat}&lng=${coords.lng}&service=${service}`,
       );
 
       const data = await res.json();
